@@ -2,38 +2,77 @@
 <html>
     <head>
         <title> Contact Us</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+        
+        <style>
+          *{
+            font-family: 'Roboto Slab', serif;
+          }
+
+          label{
+            font-size: x-large;
+            color: blueviolet;
+          }
+
+          input{
+            width: 400px;
+            height: 25px;
+            border-radius: 10px;
+            border: 1px solid burlywood;     
+            color: black;
+        }
+
+        input[type="text"]{
+            text-transform: capitalize;  
+        }
+        input[type="email"]{
+            color: crimson;
+            text-transform: lowercase;
+        }
+        #submit:hover{
+            color: rgb(235, 142, 142);
+        }
+       #button:hover{ 
+            color: rgb(213, 120, 120);
+        }
+        h3{
+            background-color: darkkhaki; width: 700px;
+        }
+        </style>
     </hrad>
     <body>
         <h3> Contact Us</h3>
         <form>
-            <table> 
-                <tr> <td> <lable for="fullName"> Full Name</lable> </td>
-                    <td> <inpute type="text" id="fullName" autofocus required maxlength="40"></inpute></td>
+            <table>
+                <tbody> 
+                <tr> 
+                    <td><label>Full Name:</label></td>
+                    <td><input type="text" maxlength="40" placeholder="Max Character Length=40"></td>
                 </tr>
 
                 <tr>
-                    <td> <label for="contactNumber"> Contact Number </label> </td>
-                    <td> <input type="number" id="contactNumber" required> </td>
-                </tr>
-                <tr>
-                    <td> <label> Email Address </label> </td>
-                    <td> <input type="email" required placeholder="Ex.abc@gmail.com">  </td>
+                    <td><label>Contact Number:</label></td>
+                    <td><input type="tel"></td>
                 </tr>
 
                 <tr>
-                    <td> Enquiry: </td>
-                    <td> <textarea rows="7" cols="25"> </textarea> </td>
+                    <td><label>Email Address:</label></td>
+                    <td><input type="email" required placeholder="Ex.abc@gmail.com"></td>
                 </tr>
 
                 <tr>
-                    <td> <button type="submit"> Register </button> </td>
-                    <td><button type="reset">Clear All</button> </td>
+                    <td><label>Enquiry:</label></td>
+                    <td><textarea rows="10" cols="50"></textarea></td>
                 </tr>
 
-
-
+                <tr>
+                    <td><button type="submit" id="submit">Submit</button> </td>
+                    <td><button type="reset" id="button">Clear</button> </td>
+                </tr>
+              </tbody>
             </table>
-
         </form>
     </body>
 </html>
